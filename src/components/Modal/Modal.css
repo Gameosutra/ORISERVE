@@ -1,0 +1,41 @@
+.Modal {
+    position: fixed;
+    z-index: 500;
+    background-color: white;
+    width: 70%;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px black;
+    left: 15%;
+    top: 30%;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+}
+
+.Button { 
+    background-color: aliceblue;
+        color: black;
+        font: inherit;
+        border: 1px solid black;
+        padding: 8px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-bottom: 5%;
+        position: absolute;
+        right: 0%;
+  }
+  
+  .Button:hover {
+      background-color: lightblue;
+      color: black;
+  }
+
+
+@media (min-width: 600px) {
+    .Modal {
+        width: 50%;
+        left: calc(42% - 250px);
+    }
+    .Button {
+        margin-bottom: 0%;
+    }
+}

@@ -1,0 +1,87 @@
+.Nav {
+    justify-content: center;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.NavForm {
+    width: 100%;
+    justify-content: center
+}
+
+.navInput {
+    width: 100%;
+}
+.cursor {
+    cursor: auto;
+}
+.searchBox {
+    width: 100%;
+    border-radius: 5px;
+    height: 45px;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 3%;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    outline: none
+}
+
+.outerBox {
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+.Nav ul {
+    list-style-type: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid grey;
+    position: absolute;
+    background-color: white;
+    width: 93%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-top: 5px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    float: left;
+    max-width:auto;
+    max-height: 200%;
+  
+}
+.Nav ul::before {
+    content: "";
+}
+
+.Nav li {
+    padding: 10px 0px 0px 5px;
+    cursor: pointer;
+    border-bottom: 1px solid grey;
+    padding: 2%;
+}
+
+.Nav li:hover {
+    /* text-decoration: underline; */
+    background-color: rgba(128,128,128,0.20);
+}
+
+.clearButton {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+
+@media (min-width: 600px) {
+    .navInput {
+        width: 50%;
+    }
+    .Nav ul {
+        width: 49%;
+    }
+}

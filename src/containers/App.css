@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+}
+
+.red {
+  color: red;
+}
+
+.centerSearch {
+  justify-content: center;
+}
+
+
+.loader {
+  position: fixed;
+    left: 40%;
+    top: 45%;
+    z-index: 1000;
+    height: 100px;
+    width: 100px;
+}
+
+@media (min-width: 600px) {
+  .loader {
+    left: 45%;
+  }
+}
+
